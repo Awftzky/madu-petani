@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesan / Kontak | MADU PETANI</title>
+  </head>
+  <body>
+    <header>
+      <p><strong>MADU PETANI</strong></p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="products.html">Produk</a></li>
+          <li><a href="product-detail.html">Detail Produk</a></li>
+          <li><a href="order.html">Pesan / Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Pesan / Kontak</h1>
+      <p>Isi formulir berikut untuk menyampaikan pertanyaan atau permintaan pesanan.</p>
+      <p>Pengiriman formulir belum aktif: TBD.</p>
+
+      <section>
+        <h2>Formulir Pesan / Kontak</h2>
+        <form method="post">
+          <p>
+            <label for="full-name">Nama lengkap</label><br>
+            <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="phone">Nomor WhatsApp / telepon</label><br>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+          </p>
+
+          <p>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="product">Pilih produk</label><br>
+            <select id="product" name="product" required>
+              <option value="">-- Pilih produk --</option>
+              <option value="apis-dorsata-nektar-kelapa">Apis Dorsata Nektar Kelapa</option>
+              <option value="apis-mellifera-nektar-kaliandra">Apis Mellifera Nektar Kaliandra</option>
+              <option value="apis-mellifera-nektar-karet">Apis Mellifera Nektar Karet</option>
+              <option value="apis-mellifera-nektar-akasia">Apis Mellifera Nektar Akasia</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="quantity">Jumlah</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+          </p>
+
+          <p>
+            <label for="message">Pesan / catatan</label><br>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </p>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Kontak MADU PETANI</h2>
+        <p><a href="https://www.instagram.com/madupetani_">Kunjungi Instagram MADU PETANI</a></p>
+        <p>Nomor WhatsApp: TBD.</p>
+        <p>Informasi kontak bisnis lainnya: TBD.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>MADU PETANI</p>
+      <p><a href="https://www.instagram.com/madupetani_">Instagram MADU PETANI</a></p>
+    </footer>
+  </body>
+</html>
