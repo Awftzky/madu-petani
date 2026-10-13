@@ -1,89 +1,84 @@
 <!doctype html>
 <html lang="id">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Produk | MADU PETANI</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header>
-      <p><strong>MADU PETANI</strong></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="products.html">Produk</a></li>
-          <li><a href="product-detail.html">Detail Produk</a></li>
-          <li><a href="order.html">Pesan / Kontak</a></li>
+  <body class="bg-amber-50 text-stone-800 antialiased">
+    <header class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 border-b border-amber-200 px-4 py-5 sm:flex-row sm:px-6">
+      <p class="m-0 text-xl font-extrabold tracking-wide text-amber-900">MADU PETANI</p>
+      <nav aria-label="Navigasi utama">
+        <ul class="flex flex-wrap justify-center gap-2 p-0 sm:gap-4">
+          <li><a class="rounded-full px-4 py-2 text-sm font-semibold text-stone-700 no-underline transition hover:bg-amber-100 hover:text-amber-900" href="index.html">Beranda</a></li>
+          <li><a class="rounded-full bg-amber-200 px-4 py-2 text-sm font-semibold text-amber-950 no-underline" href="products.html" aria-current="page">Produk</a></li>
+          <li><a class="rounded-full px-4 py-2 text-sm font-semibold text-stone-700 no-underline transition hover:bg-amber-100 hover:text-amber-900" href="product-detail.html">Detail Produk</a></li>
+          <li><a class="rounded-full px-4 py-2 text-sm font-semibold text-stone-700 no-underline transition hover:bg-amber-100 hover:text-amber-900" href="order.html">Pesan / Kontak</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <h1>Produk MADU PETANI</h1>
-      <p>Temukan produk madu yang tersedia dari MADU PETANI.</p>
+    <main class="mx-auto min-h-[70vh] max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
+      <section class="mb-8 rounded-3xl bg-gradient-to-br from-amber-100 via-orange-50 to-yellow-100 px-6 py-10 sm:px-10">
+        <p class="mb-2 text-sm font-bold uppercase tracking-widest text-amber-800">Katalog</p>
+        <h1 class="mb-3 text-3xl font-extrabold tracking-tight text-amber-950 sm:text-4xl">Produk MADU PETANI</h1>
+        <p class="max-w-2xl leading-7 text-stone-700">Temukan produk madu yang tersedia dari MADU PETANI.</p>
+      </section>
 
       <section>
-        <h2>Daftar Produk</h2>
+        <h2 class="mb-6 text-2xl font-bold text-amber-950">Daftar Produk</h2>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="flex h-full flex-col rounded-2xl border border-amber-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <h3 class="mb-3 text-lg font-bold text-amber-950">Apis Dorsata Nektar Kelapa</h3>
+            <img class="mb-4 aspect-[4/3] w-full rounded-xl bg-amber-100 object-cover" src="assets/images/apis-dorsata-nektar-kelapa.jpg" alt="Produk madu Apis Dorsata Nektar Kelapa ukuran 250 ml" />
+            <dl class="mb-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm">
+              <dt class="font-semibold text-stone-600">Kategori</dt><dd class="m-0 text-stone-800">Madu Hutan</dd>
+              <dt class="font-semibold text-stone-600">Ukuran</dt><dd class="m-0 text-stone-800">250 ml</dd>
+              <dt class="font-semibold text-stone-600">Harga</dt><dd class="m-0 font-semibold text-amber-900">Rp95.000</dd>
+            </dl>
+            <a class="mt-auto font-semibold text-amber-800 underline decoration-amber-300 underline-offset-4 hover:text-amber-950" href="product-detail.html">Lihat detail Apis Dorsata Nektar Kelapa</a>
+          </article>
 
-        <article>
-          <h3>Apis Dorsata Nektar Kelapa</h3>
-          <img src="assets/images/apis-dorsata-nektar-kelapa.jpg" alt="Produk madu Apis Dorsata Nektar Kelapa ukuran 250 ml">
-          <dl>
-            <dt>Kategori</dt>
-            <dd>Madu Hutan</dd>
-            <dt>Ukuran</dt>
-            <dd>250 ml</dd>
-            <dt>Harga</dt>
-            <dd>Rp95.000</dd>
-          </dl>
-          <p><a href="product-detail.html">Lihat detail Apis Dorsata Nektar Kelapa</a></p>
-        </article>
+          <article class="flex h-full flex-col rounded-2xl border border-amber-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <h3 class="mb-3 text-lg font-bold text-amber-950">Apis Mellifera Nektar Kaliandra</h3>
+            <img class="mb-4 aspect-[4/3] w-full rounded-xl bg-amber-100 object-cover" src="assets/images/apis-mellifera-nektar-kaliandra.jpg" alt="Produk madu Apis Mellifera Nektar Kaliandra ukuran 250 ml" />
+            <dl class="mb-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm">
+              <dt class="font-semibold text-stone-600">Kategori</dt><dd class="m-0 text-stone-800">Madu Ternak</dd>
+              <dt class="font-semibold text-stone-600">Ukuran</dt><dd class="m-0 text-stone-800">250 ml</dd>
+              <dt class="font-semibold text-stone-600">Harga</dt><dd class="m-0 font-semibold text-amber-900">Rp90.000</dd>
+            </dl>
+          </article>
 
-        <article>
-          <h3>Apis Mellifera Nektar Kaliandra</h3>
-          <img src="assets/images/apis-mellifera-nektar-kaliandra.jpg" alt="Produk madu Apis Mellifera Nektar Kaliandra ukuran 250 ml">
-          <dl>
-            <dt>Kategori</dt>
-            <dd>Madu Ternak</dd>
-            <dt>Ukuran</dt>
-            <dd>250 ml</dd>
-            <dt>Harga</dt>
-            <dd>Rp90.000</dd>
-          </dl>
-        </article>
+          <article class="flex h-full flex-col rounded-2xl border border-amber-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <h3 class="mb-3 text-lg font-bold text-amber-950">Apis Mellifera Nektar Karet</h3>
+            <img class="mb-4 aspect-[4/3] w-full rounded-xl bg-amber-100 object-cover" src="assets/images/apis-mellifera-nektar-karet.jpg" alt="Produk madu Apis Mellifera Nektar Karet ukuran 250 ml" />
+            <dl class="mb-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm">
+              <dt class="font-semibold text-stone-600">Kategori</dt><dd class="m-0 text-stone-800">Madu Ternak</dd>
+              <dt class="font-semibold text-stone-600">Ukuran</dt><dd class="m-0 text-stone-800">250 ml</dd>
+              <dt class="font-semibold text-stone-600">Harga</dt><dd class="m-0 font-semibold text-amber-900">Rp80.000</dd>
+            </dl>
+          </article>
 
-        <article>
-          <h3>Apis Mellifera Nektar Karet</h3>
-          <img src="assets/images/apis-mellifera-nektar-karet.jpg" alt="Produk madu Apis Mellifera Nektar Karet ukuran 250 ml">
-          <dl>
-            <dt>Kategori</dt>
-            <dd>Madu Ternak</dd>
-            <dt>Ukuran</dt>
-            <dd>250 ml</dd>
-            <dt>Harga</dt>
-            <dd>Rp80.000</dd>
-          </dl>
-        </article>
-
-        <article>
-          <h3>Apis Mellifera Nektar Akasia</h3>
-          <img src="assets/images/apis-mellifera-nektar-akasia.jpg" alt="Produk madu Apis Mellifera Nektar Akasia ukuran 250 ml">
-          <dl>
-            <dt>Kategori</dt>
-            <dd>Madu Ternak</dd>
-            <dt>Ukuran</dt>
-            <dd>250 ml</dd>
-            <dt>Harga</dt>
-            <dd>Rp70.000</dd>
-          </dl>
-        </article>
+          <article class="flex h-full flex-col rounded-2xl border border-amber-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <h3 class="mb-3 text-lg font-bold text-amber-950">Apis Mellifera Nektar Akasia</h3>
+            <img class="mb-4 aspect-[4/3] w-full rounded-xl bg-amber-100 object-cover" src="assets/images/apis-mellifera-nektar-akasia.jpg" alt="Produk madu Apis Mellifera Nektar Akasia ukuran 250 ml" />
+            <dl class="mb-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm">
+              <dt class="font-semibold text-stone-600">Kategori</dt><dd class="m-0 text-stone-800">Madu Ternak</dd>
+              <dt class="font-semibold text-stone-600">Ukuran</dt><dd class="m-0 text-stone-800">250 ml</dd>
+              <dt class="font-semibold text-stone-600">Harga</dt><dd class="m-0 font-semibold text-amber-900">Rp70.000</dd>
+            </dl>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>MADU PETANI</p>
-      <p><a href="https://www.instagram.com/madupetani_">Instagram MADU PETANI</a></p>
+    <footer class="border-t border-amber-200 bg-white">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-6 text-sm text-stone-600 sm:flex-row sm:px-6">
+        <p class="m-0 font-bold text-amber-900">MADU PETANI</p>
+        <p class="m-0"><a class="font-semibold text-amber-800 underline decoration-amber-300 underline-offset-4 hover:text-amber-950" href="https://www.instagram.com/madupetani_">Instagram MADU PETANI</a></p>
+      </div>
     </footer>
   </body>
 </html>

@@ -11,7 +11,7 @@
 
 ## Current Development Phase
 
-The project is currently in the pure HTML phase. Visual styling and advanced functionality are not priorities yet.
+The project is currently in the Tailwind CSS phase. The existing HTML pages use Tailwind utility classes for a consistent, responsive presentation.
 
 ## Planned Pages
 
@@ -22,7 +22,7 @@ The project is currently in the pure HTML phase. Visual styling and advanced fun
 
 ## Technology Status
 
-Only semantic, accessible HTML is planned for the current phase. CSS, frameworks, JavaScript, backend services, databases, APIs, and build tools are not currently in use.
+The project uses semantic HTML, Tailwind CSS through the official Play CDN, and one external stylesheet, `style.css`, for shared base styles. Tailwind utility classes style the navigation, page layouts, product cards, buttons, and form controls, including responsive layouts for narrow screens. The Play CDN requires an internet connection and is intended for development. No custom application JavaScript, React, Bootstrap, backend services, databases, APIs, package manager, or local build tools are in use.
 
 ## Development Note
 

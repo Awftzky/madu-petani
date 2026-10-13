@@ -97,11 +97,12 @@ MADU PETANI is an Indonesian UMKM that promotes and sells honey products sourced
 
 # Current Technical Constraints
 
-- Use pure HTML only.
-- Provide at least three HTML pages; the current direction includes four.
-- Do not use CSS, JavaScript, React, Bootstrap, Tailwind, or other frameworks in this phase.
-- Do not add a backend, database, API, package manager, dependencies, or build tools.
-- Visual appearance is not a current priority.
+- Use semantic HTML and Tailwind CSS for page styling.
+- Provide at least three HTML pages; the current implementation includes four.
+- Keep one external stylesheet, `style.css`, shared by all pages for base styles.
+- Use Tailwind utility classes for consistent styling and responsive layouts.
+- Load Tailwind through its Play CDN; a network connection is required, and this setup is for development.
+- Do not add custom application JavaScript, React, Bootstrap, a backend, database, API, package manager, or local build tools.
 - Use basic HTML elements and semantic HTML5 where relevant.
 - Apply basic accessibility practices, especially descriptive image alternatives and correct form label associations.
 
@@ -116,7 +117,8 @@ MADU PETANI is an Indonesian UMKM that promotes and sells honey products sourced
 - Every applicable form label is correctly associated with its control through matching `for` and `id` values.
 - The Instagram link uses the provided official account URL.
 - The WhatsApp call to action uses a confirmed destination or is clearly marked TBD.
-- No CSS, JavaScript, framework, backend, database, API, dependency, build tool, or unrelated feature is introduced.
+- All pages link to the shared stylesheet and use Tailwind classes for consistent styling with narrow-screen responsive behavior.
+- Tailwind is the selected framework; no custom application JavaScript, backend, database, API, package manager, local build tool, or unrelated feature is introduced.
 - Unknown business information is marked TBD and is not fabricated.
 
 # TBD / Open Questions
@@ -126,4 +128,4 @@ MADU PETANI is an Indonesian UMKM that promotes and sells honey products sourced
 - WhatsApp number and preferred prefilled ordering message.
 - Business contact details and operating hours, if they should be published.
 - Exact fields required in the order/contact form.
-- Whether form submission should remain demonstrative during the HTML-only phase.
+- Whether form submission should remain demonstrative during the current Tailwind CSS phase.
