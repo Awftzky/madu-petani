@@ -72,6 +72,12 @@ MADU PETANI is an Indonesian UMKM that promotes and sells honey products sourced
    - Size: 250 ml
    - Price: Rp70.000
 
+5. **Dorsata-Kolaka**
+   - Category: TBD
+   - Size: TBD
+   - Price: TBD
+   - Image: assets/images/products/dorsata-kolaka.jpg
+
 # Functional Requirements
 
 - **FR-01:** The website must provide navigation between all pages.
